@@ -26,7 +26,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.066, 0.132, 0.198 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Rect2( 102, 83, 29, 72 ), Rect2( 40, 81, 30, 72 ), Rect2( 40, 154, 29, 72 ), Rect2( 71, 83, 30, 72 ) ]
+"values": [ Rect2( 40, 154, 30, 72 ), Rect2( 40, 81, 31, 72 ), Rect2( 71, 156, 30, 72 ), Rect2( 72, 83, 31, 72 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Sprite:offset")
@@ -38,7 +38,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.066, 0.132, 0.198 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( -0.5, 6 ), Vector2( -1, 6 ), Vector2( -0.5, 6 ), Vector2( -1, 6 ) ]
+"values": [ Vector2( 0, 6 ), Vector2( -0.5, 6 ), Vector2( 0, 6 ), Vector2( -0.5, 6 ) ]
 }
 
 [sub_resource type="Animation" id=6]
@@ -82,7 +82,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Rect2( 70, 156, 28, 69 ), Rect2( 99, 156, 28, 69 ) ]
+"values": [ Rect2( 104, 83, 28, 69 ), Rect2( 104, 153, 28, 69 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Sprite:offset")
@@ -113,7 +113,7 @@ LAUNCH_GRAV = 5
 texture = ExtResource( 1 )
 offset = Vector2( -1, 7.5 )
 region_enabled = true
-region_rect = Rect2( 70, 156, 28, 69 )
+region_rect = Rect2( 104, 83, 28, 69 )
 
 [node name="PhysicsCollider" type="CollisionShape2D" parent="."]
 shape = SubResource( 3 )
