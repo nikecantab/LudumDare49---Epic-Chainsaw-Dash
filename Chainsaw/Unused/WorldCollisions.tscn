@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://WorldCollisions.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 3000, 1000 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1000, 5000 )
+
+[node name="WorldCollisions" type="StaticBody2D"]
+collision_mask = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+follow = NodePath("../Chainsaw")
+
+[node name="CollisionBottom" type="CollisionShape2D" parent="."]
+position = Vector2( 1008, 1576 )
+shape = SubResource( 1 )
+
+[node name="CollisionLeft" type="CollisionShape2D" parent="."]
+position = Vector2( -1000, -4424 )
+shape = SubResource( 2 )
+
+[node name="CollisionRight" type="CollisionShape2D" parent="."]
+position = Vector2( 3000, -4424 )
+shape = SubResource( 2 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Afternoon_Birds_01_Loop.wav-4e33ca1e3e5008b1b2c13dea123ee7e3.sample"
+
+[deps]
+
+source_file="res://Sounds/Afternoon_Birds_01_Loop.wav"
+dest_files=[ "res://.import/Afternoon_Birds_01_Loop.wav-4e33ca1e3e5008b1b2c13dea123ee7e3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

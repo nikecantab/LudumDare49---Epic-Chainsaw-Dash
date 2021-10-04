@@ -7,7 +7,7 @@ onready var chainsaw = $Chainsaw
 func _input(event):
 	if Input.is_action_just_pressed("launch"):
 		target = get_global_mouse_position()
-		print("mouse from player: ", target)
+#		print("mouse from player: ", target)
 
 #
 #onready var chainsaw = $Chainsaw

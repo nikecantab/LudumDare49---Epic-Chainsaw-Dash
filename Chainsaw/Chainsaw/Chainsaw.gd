@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 const MousePress = preload("res://GUI/MousePress.tscn")
-export(int) var LAUNCH_FORCE = 1000000
+export(int) var LAUNCH_FORCE = 300000
 export(int) var LAUNCH_OFFSET = 10
 export(int) var LAUNCH_TORQUE = 50
 export(int) var LAUNCH_GRAV = 2

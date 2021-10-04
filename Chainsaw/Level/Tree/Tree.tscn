@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Tree.gd" type="Script" id=1]
+[ext_resource path="res://Level/Tree/StumpA.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Level/Tree/StumpB.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Backgrounds/Tilesets.png" type="Texture" id=4]
+
+[node name="Tree" type="Node2D" groups=[
+"Trees",
+]]
+script = ExtResource( 1 )
+
+[node name="StumpB" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, -32 )
+
+[node name="StumpA" parent="." instance=ExtResource( 2 )]
+
+[node name="Roots" type="Node2D" parent="."]
+position = Vector2( 0, 32 )
+z_index = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Roots"]
+texture = ExtResource( 4 )
+hframes = 8
+vframes = 8
+frame = 20
+
+[node name="Sprite2" type="Sprite" parent="Roots"]
+position = Vector2( -32, 0 )
+texture = ExtResource( 4 )
+hframes = 8
+vframes = 8
+frame = 19
+
+[node name="Sprite3" type="Sprite" parent="Roots"]
+position = Vector2( 32, 0 )
+texture = ExtResource( 4 )
+hframes = 8
+vframes = 8
+frame = 21
