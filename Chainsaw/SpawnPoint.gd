@@ -7,6 +7,7 @@ export(int) var spawn_amount = 1
 export var trunks = []
 
 const trunk = preload("res://Level/FallingTrunk.tscn")
+var times = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,17 +23,19 @@ func _ready():
 
 func _on_Timer_timeout():
 	for i in spawn_amount:
+		times= (times+1) % 947
 		var instance = trunk.instance()
 		add_child(instance)
 		instance.global_position = global_position
-		seed(i)
+		seed(i + times)
 		instance.position.y = rand_range(-range_y, range_y)
 		instance.position.x =  rand_range(-range_x, range_x)
 		trunks.append(instance)
 	$Timer.start(spawn_time)
-	if trunks.size() > 20:
-		var oldest = trunks.pop_front()
-		oldest.queue_free()
+#	if trunks.size() > 20:
+#		var oldest = trunks.pop_front()
+#		if trunks != null:
+#			oldest.queue_free()
 	print("timeout")
 
 func _on_died(trunk):
