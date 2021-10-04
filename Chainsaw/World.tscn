@@ -225,30 +225,50 @@ zoom_enabled = true
 visible = false
 
 [node name="SpawnPoint" type="Node2D" parent="."]
-position = Vector2( 1104, -432 )
+position = Vector2( 1216, -376 )
 z_index = 2
 script = ExtResource( 15 )
+range_x = 700
+range_y = 100
+spawn_amount = 4
 
 [node name="FallingTrunk" parent="SpawnPoint" instance=ExtResource( 3 )]
-position = Vector2( 56, 664 )
+position = Vector2( -138, 648 )
 
 [node name="FallingTrunk2" parent="SpawnPoint" instance=ExtResource( 3 )]
-position = Vector2( -248, 48 )
+position = Vector2( -576, 136 )
 
 [node name="FallingTrunk3" parent="SpawnPoint" instance=ExtResource( 3 )]
 position = Vector2( 216, 8 )
+health = 600
 
 [node name="Timer" type="Timer" parent="SpawnPoint"]
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[node name="SpawnPoint2" type="Node2D" parent="."]
+position = Vector2( 1016, -1776 )
+z_index = 2
+script = ExtResource( 15 )
+range_x = 800
+range_y = 100
+spawn_amount = 4
+
+[node name="Timer" type="Timer" parent="SpawnPoint2"]
+wait_time = 10.0
 one_shot = true
 autostart = true
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
 volume_db = 1.0
+autoplay = true
 mix_target = 2
 script = ExtResource( 9 )
 
 [connection signal="timeout" from="SpawnPoint/Timer" to="SpawnPoint" method="_on_Timer_timeout"]
+[connection signal="timeout" from="SpawnPoint2/Timer" to="SpawnPoint2" method="_on_Timer_timeout"]
 [connection signal="finished" from="MusicPlayer" to="MusicPlayer" method="_on_AudioStreamPlayer_finished"]
 
 [editable path="ParallaxBackground/ParallaxLayer2/Sprite3"]

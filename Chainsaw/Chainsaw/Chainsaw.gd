@@ -90,11 +90,13 @@ func _process(delta):
 				Events.emit_signal("start_music_grinding")
 				Events.emit_signal("add_screenshake", .01,.01)
 				$Particles2D.emitting = true
+				$Particles2D2.emitting = true
 			elif Input.is_action_just_released("launch"):
 					trunkTarget.queue_free()
 					toggle_physics(true)
 					state = FREEFALL
 					$Particles2D.emitting = false
+					$Particles2D2.emitting = false
 					
 			else:
 				animator.play("Slow")

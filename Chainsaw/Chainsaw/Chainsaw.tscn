@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Chainsaw/ChainsawHead.png" type="Texture" id=1]
 [ext_resource path="res://Chainsaw/Chainsaw.gd" type="Script" id=2]
 [ext_resource path="res://Chainsaw/ChainsawHeandle.png" type="Texture" id=3]
 [ext_resource path="res://Chainsaw/ChainsawSide.png" type="Texture" id=4]
 [ext_resource path="res://VFX/SawdustSmall.png" type="Texture" id=5]
+[ext_resource path="res://VFX/SawdustBig.png" type="Texture" id=6]
 
 [sub_resource type="PhysicsMaterial" id=1]
 bounce = 0.2
@@ -260,6 +261,20 @@ angle_random = 1.0
 scale = 0.9
 scale_random = 1.0
 
+[sub_resource type="ParticlesMaterial" id=8]
+lifetime_randomness = 0.18
+flag_align_y = true
+flag_rotate_y = true
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 200.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 72.08
+radial_accel = 100.0
+scale = 0.7
+
 [node name="Chainsaw" type="RigidBody2D"]
 collision_layer = 2
 mass = 500.0
@@ -341,9 +356,19 @@ amount = 300
 lifetime = 0.4
 explosiveness = 0.1
 randomness = 0.48
-fixed_fps = 24
+fixed_fps = 20
 process_material = SubResource( 7 )
 texture = ExtResource( 5 )
+
+[node name="Particles2D2" type="Particles2D" parent="."]
+position = Vector2( 8, -6 )
+emitting = false
+amount = 20
+speed_scale = 4.0
+explosiveness = 1.0
+fixed_fps = 30
+process_material = SubResource( 8 )
+texture = ExtResource( 6 )
 
 [connection signal="body_entered" from="." to="." method="_on_Chainsaw_body_entered"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
