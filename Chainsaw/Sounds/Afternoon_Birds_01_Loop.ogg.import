@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Afternoon_Birds_01_Loop.ogg-92d32d4fc61feb090a577bc1893cf367.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Afternoon_Birds_01_Loop.ogg"
+dest_files=[ "res://.import/Afternoon_Birds_01_Loop.ogg-92d32d4fc61feb090a577bc1893cf367.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

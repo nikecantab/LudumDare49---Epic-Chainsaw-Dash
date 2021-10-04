@@ -92,14 +92,9 @@
    { "name": "Fast", "from": 2, "to": 5, "direction": "forward", "color": "#000000ff" },
    { "name": "HyperSpeed", "from": 6, "to": 9, "direction": "forward", "color": "#000000ff" }
   ],
-  "layers": [
-   { "name": "teeth", "opacity": 255, "blendMode": "normal" },
-   { "name": "centerpiece", "opacity": 255, "blendMode": "normal" },
-   { "name": "handle", "opacity": 255, "blendMode": "normal" },
-   { "name": "smears", "opacity": 255, "blendMode": "normal" },
-   { "name": "details", "opacity": 255, "blendMode": "normal" }
-  ],
   "slices": [
+   { "name": "Slice 1", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 0, "y": 0, "w": 50, "h": 48 } }] },
+   { "name": "Slice 2", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 0, "y": 48, "w": 50, "h": 40 } }] }
   ]
  }
 }

@@ -1,0 +1,100 @@
+{ "frames": {
+   "ChainsawSide 0.aseprite": {
+    "frame": { "x": 13, "y": 153, "w": 12, "h": 67 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 10, "y": 19, "w": 12, "h": 67 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 100
+   },
+   "ChainsawSide 1.aseprite": {
+    "frame": { "x": 26, "y": 156, "w": 12, "h": 66 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 10, "y": 20, "w": 12, "h": 66 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 100
+   },
+   "ChainsawSide 2.aseprite": {
+    "frame": { "x": 45, "y": 83, "w": 12, "h": 72 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 10, "y": 14, "w": 12, "h": 72 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 66
+   },
+   "ChainsawSide 3.aseprite": {
+    "frame": { "x": 17, "y": 80, "w": 13, "h": 72 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 9, "y": 14, "w": 13, "h": 72 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 66
+   },
+   "ChainsawSide 4.aseprite": {
+    "frame": { "x": 0, "y": 152, "w": 12, "h": 72 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 10, "y": 14, "w": 12, "h": 72 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 66
+   },
+   "ChainsawSide 5.aseprite": {
+    "frame": { "x": 31, "y": 83, "w": 13, "h": 72 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 9, "y": 14, "w": 13, "h": 72 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 66
+   },
+   "ChainsawSide 6.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 19, "h": 72 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 3, "y": 14, "w": 19, "h": 72 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 66
+   },
+   "ChainsawSide 7.aseprite": {
+    "frame": { "x": 0, "y": 73, "w": 16, "h": 78 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 9, "w": 16, "h": 78 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 66
+   },
+   "ChainsawSide 8.aseprite": {
+    "frame": { "x": 38, "y": 0, "w": 16, "h": 82 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 5, "w": 16, "h": 82 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 66
+   },
+   "ChainsawSide 9.aseprite": {
+    "frame": { "x": 20, "y": 0, "w": 17, "h": 79 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 5, "y": 6, "w": 17, "h": 79 },
+    "sourceSize": { "w": 22, "h": 88 },
+    "duration": 66
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.3-beta6-x64",
+  "image": "ChainsawSide.png",
+  "format": "RGBA8888",
+  "size": { "w": 57, "h": 224 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Slow", "from": 0, "to": 1, "direction": "forward", "color": "#000000ff" },
+   { "name": "Fast", "from": 2, "to": 5, "direction": "forward", "color": "#000000ff" },
+   { "name": "HyperSpeed", "from": 6, "to": 9, "direction": "forward", "color": "#000000ff" }
+  ],
+  "slices": [
+   { "name": "Head", "color": "#fe5b59ff", "keys": [{ "frame": 0, "bounds": {"x": 0, "y": 0, "w": 50, "h": 48 } }] },
+   { "name": "Handle", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 0, "y": 48, "w": 50, "h": 40 } }] }
+  ]
+ }
+}

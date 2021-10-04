@@ -7,9 +7,9 @@
 script = ExtResource( 2 )
 
 [node name="Chainsaw" parent="." instance=ExtResource( 1 )]
+script = null
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Chainsaw"]
-remote_path = NodePath("../../Locator")
-update_scale = false
+[connection signal="body_entered" from="Chainsaw" to="." method="_on_Chainsaw_body_entered"]
+[connection signal="area_entered" from="Chainsaw/Area2D" to="." method="_on_Area2D_area_entered"]
 
-[node name="Locator" type="Node2D" parent="."]
+[editable path="Chainsaw"]

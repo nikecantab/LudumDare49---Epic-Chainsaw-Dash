@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Backgrounds/BGSlice 23.png" type="Texture" id=1]
 [ext_resource path="res://Backgrounds/BGSlice 22.png" type="Texture" id=2]
@@ -6,11 +6,22 @@
 [ext_resource path="res://Backgrounds/BGSlice 25.png" type="Texture" id=4]
 [ext_resource path="res://Backgrounds/BGSlice 24.png" type="Texture" id=5]
 [ext_resource path="res://Backgrounds/BGSlice 27.png" type="Texture" id=6]
+[ext_resource path="res://Level/FallingTrunk.gd" type="Script" id=7]
+
+[sub_resource type="PhysicsMaterial" id=2]
+friction = 0.9
+rough = true
+bounce = 0.1
+absorbent = true
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 77, 14 )
+extents = Vector2( 77, 12 )
 
 [node name="FallingTrunk" type="RigidBody2D"]
+collision_mask = 3
+mass = 3.0
+physics_material_override = SubResource( 2 )
+script = ExtResource( 7 )
 
 [node name="TrunkBodyTop" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -41,4 +52,13 @@ position = Vector2( 72, 8 )
 texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
 shape = SubResource( 1 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Battle_-_Mean_Machine.ogg-1a681cea306b8f9168950d6db96710cb.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Battle_-_Mean_Machine.ogg"
+dest_files=[ "res://.import/Battle_-_Mean_Machine.ogg-1a681cea306b8f9168950d6db96710cb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

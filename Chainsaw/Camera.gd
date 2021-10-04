@@ -51,6 +51,7 @@ func _on_ZoomTimer_timeout():
 #	zoom_in = false
 	zoom_target = 1
 	zoom_speed = 0.01
+	Events.emit_signal("start_music_normal")
 	pass
 
 

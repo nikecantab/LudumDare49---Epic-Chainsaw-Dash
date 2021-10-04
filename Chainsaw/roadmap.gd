@@ -3,10 +3,10 @@
 #
 #TODO:
 #	-correct force placement			V
-#	-angular velocity
-#	-trunks
+#	-angular velocity					V
+#	-trunks								V
 #	-animation							V
 #	-zoom								V
-#	-stuck state						
+#	-stuck state						V
 #	-destruction progress				
 #	-hitpause							

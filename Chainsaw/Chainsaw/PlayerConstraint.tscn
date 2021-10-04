@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="PlayerConstraint" type="RemoteTransform2D"]
+update_scale = false
